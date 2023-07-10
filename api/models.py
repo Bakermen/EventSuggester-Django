@@ -35,6 +35,7 @@ class Weather(models.Model):
     event = models.ForeignKey(to=Events, on_delete=models.CASCADE)
     temperature = models.FloatField()
     humidity = models.IntegerField()
+    created_at = models.DateTimeField()
 
     def __str__(self) -> str:
         return str(self.temperature) + ", " + str(self.humidity)

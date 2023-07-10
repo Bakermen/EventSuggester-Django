@@ -1,5 +1,5 @@
 from rest_framework.serializers import ModelSerializer
-from .models import Events
+from .models import Events, Weather, Flights
 
 
 class EventsSeriailzer(ModelSerializer):
